@@ -16,15 +16,15 @@ def test_reverse_list():
 
 # ------------------------------------------------------------------------------
 
-#def reverse_string(s):
+def reverse_string(s):
     """
     Reverses order of characters in string s.
     """
-    #return None
+    return None
 
 
-#def test_reverse_string():
-    #assert reverse_string("foobar") == "raboof"
+def test_reverse_string():
+    assert reverse_string("foobar") == "raboof"
 
 
 # ------------------------------------------------------------------------------
