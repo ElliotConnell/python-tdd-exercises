@@ -1,11 +1,11 @@
 
-def reverse_list(self):
+def reverse_list(l):
     """
     Reverses order of elements in list l.
     """
     
-    self.reverse()
-    return self
+    l.reverse()
+    return l
 
 
 def test_reverse_list():
@@ -20,11 +20,14 @@ def reverse_string(s):
     """
     Reverses order of characters in string s.
     """
-    return None
+    s = s[::-1]
+    return s
 
 
 def test_reverse_string():
     assert reverse_string("foobar") == "raboof"
+    assert reverse_string("hello world!") == "!dlrow olleh"
+    assert reverse_string("test") != "test"
 
 
 # ------------------------------------------------------------------------------
