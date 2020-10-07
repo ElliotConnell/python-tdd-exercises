@@ -32,30 +32,30 @@ def test_reverse_string():
 
 # ------------------------------------------------------------------------------
 
-#def is_english_vowel(c):
+def is_english_vowel(c):
     """
     Returns True if c is an english vowel
     and False otherwise.
     """
-    #return None
+    return None
 
 
-#def test_is_english_vowel():
-    #assert is_english_vowel('a')
-    #assert is_english_vowel('e')
-    #assert is_english_vowel('i')
-    #assert is_english_vowel('o')
-    #assert is_english_vowel('u')
-    #assert is_english_vowel('y')
-    #assert is_english_vowel('A')
-    #assert is_english_vowel('E')
-    #assert is_english_vowel('I')
-    #assert is_english_vowel('O')
-    #assert is_english_vowel('U')
-    #assert is_english_vowel('Y')
-    #assert not is_english_vowel('k')
-    #assert not is_english_vowel('z')
-    #assert not is_english_vowel('?')
+def test_is_english_vowel():
+    assert is_english_vowel('a')
+    assert is_english_vowel('e')
+    assert is_english_vowel('i')
+    assert is_english_vowel('o')
+    assert is_english_vowel('u')
+    assert is_english_vowel('y')
+    assert is_english_vowel('A')
+    assert is_english_vowel('E')
+    assert is_english_vowel('I')
+    assert is_english_vowel('O')
+    assert is_english_vowel('U')
+    assert is_english_vowel('Y')
+    assert not is_english_vowel('k')
+    assert not is_english_vowel('z')
+    assert not is_english_vowel('?')
 
 
 # ------------------------------------------------------------------------------
