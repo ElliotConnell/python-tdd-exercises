@@ -68,24 +68,24 @@ def test_is_english_vowel():
 
 # ------------------------------------------------------------------------------
 
-#def count_num_vowels(s):
+def count_num_vowels(s):
     """
     Returns the number of vowels in a string s.
     """
     #return None
 
 
-#def test_count_num_vowels():
+def test_count_num_vowels():
     #sentence = "hey ho let's go"
     #assert count_num_vowels(sentence) == 5
     #sentence = "HEY ho let's GO"
     #assert count_num_vowels(sentence) == 5
-#     paragraph = """She told me her name was Billie Jean,
-#                    as she caused a scene
-#                    Then every head turned with eyes
-#                    that dreamed of being the one
-#                    Who will dance on the floor in the round"""
-#     assert count_num_vowels(paragraph) == 54
+     paragraph = """She told me her name was Billie Jean,
+                    as she caused a scene
+                    Then every head turned with eyes
+                    that dreamed of being the one
+                    Who will dance on the floor in the round"""
+     assert count_num_vowels(paragraph) == 54
 
 
 # # ------------------------------------------------------------------------------
