@@ -96,15 +96,22 @@ def test_count_num_vowels():
 
 # # ------------------------------------------------------------------------------
 
-def histogram(l):
+def histogram(nums):
     """
     Converts a list of integers into a simple string histogram.
     """
-    return None
+    hash_list = list()
 
+    for item in nums:
+        variable = item * '#'
+        hash_list.append(variable)
+
+
+    return str("\n".join(hash_list))
 
 def test_histogram():
     assert histogram([2, 5, 1]) == '##\n#####\n#'
+    assert histogram([2, 3, 4]) == '##\n###\n####'
 
 
 # # ------------------------------------------------------------------------------
