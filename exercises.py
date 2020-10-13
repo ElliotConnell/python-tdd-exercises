@@ -116,12 +116,18 @@ def test_histogram():
 
 # # ------------------------------------------------------------------------------
 
-def get_word_lengths(s):
+def get_word_lengths(text):
     """
     Returns a list of integers representing
     the word lengths in string s.
     """
-    return None
+    word_len = list()
+    word_list = text.split()
+
+    for words in word_list:
+        word_len.append(len(words))
+
+    return word_len
 
 
 def test_get_word_lengths():
@@ -131,19 +137,19 @@ def test_get_word_lengths():
 
 # # ------------------------------------------------------------------------------
 
-# def find_longest_word(s):
-#     """
-#     Returns the longest word in string s.
-#     In case there are several, return the first.
-#     """
-#     return None
+def find_longest_word(s):
+    """
+    Returns the longest word in string s.
+    In case there are several, return the first.
+    """
+    return None
 
 
-# def test_find_longest_word():
-#     text = "Three tomatoes are walking down the street"
-#     assert find_longest_word(text) == "tomatoes"
-#     text = "foo foo1 foo2 foo3"
-#     assert find_longest_word(text) == "foo1"
+def test_find_longest_word():
+    text = "Three tomatoes are walking down the street"
+    assert find_longest_word(text) == "tomatoes"
+    text = "foo foo1 foo2 foo3"
+    assert find_longest_word(text) == "foo1"
 
 
 # # ------------------------------------------------------------------------------
