@@ -137,13 +137,16 @@ def test_get_word_lengths():
 
 # # ------------------------------------------------------------------------------
 
-def find_longest_word(s):
+def find_longest_word(text):
     """
     Returns the longest word in string s.
     In case there are several, return the first.
     """
-    return None
 
+    word_list = text.split()
+    sorted_list = sorted(word_list, key=len, reverse=True)
+
+    return sorted_list[0]
 
 def test_find_longest_word():
     text = "Three tomatoes are walking down the street"
