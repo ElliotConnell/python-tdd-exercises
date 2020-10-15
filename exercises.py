@@ -162,7 +162,6 @@ def validate_dna(dna):
     Return True if the DNA string only contains characters
     a, c, t, or g (lower or uppercase). False otherwise.
     """
-    dna_characters = {'a', 'c', 't', 'g', 'A', 'C', 'T', 'G'}
 
     dna_characters = {'a', 'c', 't', 'g', 'A', 'C', 'T', 'G'}
     summary_list = list()
@@ -185,26 +184,26 @@ def test_validate_dna():
 
 # # ------------------------------------------------------------------------------
 
-# def base_pair(c):
-#     """
-#     Return the corresponding character (lowercase)
-#     of the base pair. If the base is not recognized,
-#     return 'unknown'.
-#     """
-#     return None
+def base_pair(c):
+    """
+    Return the corresponding character (lowercase)
+    of the base pair. If the base is not recognized,
+    return 'unknown'.
+    """
+    return None
 
 
-# def test_base_pair():
-#     assert base_pair('a') == 't'
-#     assert base_pair('t') == 'a'
-#     assert base_pair('c') == 'g'
-#     assert base_pair('g') == 'c'
-#     assert base_pair('A') == 't'
-#     assert base_pair('T') == 'a'
-#     assert base_pair('C') == 'g'
-#     assert base_pair('G') == 'c'
-#     assert base_pair('x') == 'unknown'
-#     assert base_pair('foo') == 'unknown'
+def test_base_pair():
+    assert base_pair('a') == 't'
+    assert base_pair('t') == 'a'
+    assert base_pair('c') == 'g'
+    assert base_pair('g') == 'c'
+    assert base_pair('A') == 't'
+    assert base_pair('T') == 'a'
+    assert base_pair('C') == 'g'
+    assert base_pair('G') == 'c'
+    assert base_pair('x') == 'unknown'
+    assert base_pair('foo') == 'unknown'
 
 
 # # ------------------------------------------------------------------------------
