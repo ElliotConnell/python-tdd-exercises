@@ -157,12 +157,24 @@ def test_find_longest_word():
 
 # # ------------------------------------------------------------------------------
 
-def validate_dna(s):
+def validate_dna(dna):
     """
     Return True if the DNA string only contains characters
     a, c, t, or g (lower or uppercase). False otherwise.
     """
-    return None
+    dna_characters = {'a', 'c', 't', 'g', 'A', 'C', 'T', 'G'}
+
+    dna_characters = {'a', 'c', 't', 'g', 'A', 'C', 'T', 'G'}
+    summary_list = list()
+
+    for item in dna:
+        if item in dna_characters:
+            summary_list.append(True)
+        else:
+            summary_list.append(False)
+            break
+    
+    return summary_list[-1]
 
 
 def test_validate_dna():
