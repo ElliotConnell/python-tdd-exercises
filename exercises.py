@@ -209,12 +209,13 @@ def test_base_pair():
 
 # # ------------------------------------------------------------------------------
 
-def transcribe_dna_to_rna(s):
+def transcribe_dna_to_rna(dna):
     """
     Return string s with each letter T replaced by U.
     Result is always uppercase.
     """
-    return None
+    upper = dna.upper()
+    return upper.replace('T', 'U')
 
 
 def test_transcribe_dna_to_rna():
