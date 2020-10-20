@@ -242,17 +242,17 @@ def test_get_complement():
 
 # # ------------------------------------------------------------------------------
 
-# def get_reverse_complement(s):
-#     """
-#     Return the reverse complement of string s
-#     (complement reversed in order).
-#     """
-#     return None
+def get_reverse_complement(s):
+    """
+    Return the reverse complement of string s
+    (complement reversed in order).
+    """
+    return None
 
 
-# def test_get_reverse_complement():
-#     assert get_reverse_complement('CCGGAAGAGCTTACTTAG') == 'CTAAGTAAGCTCTTCCGG'
-#     assert get_reverse_complement('ccggaagagcttacttag') == 'CTAAGTAAGCTCTTCCGG'
+def test_get_reverse_complement():
+    assert get_reverse_complement('CCGGAAGAGCTTACTTAG') == 'CTAAGTAAGCTCTTCCGG'
+    assert get_reverse_complement('ccggaagagcttacttag') == 'CTAAGTAAGCTCTTCCGG'
 
 
 # # ------------------------------------------------------------------------------
