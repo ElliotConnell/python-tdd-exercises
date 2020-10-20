@@ -225,17 +225,17 @@ def test_transcribe_dna_to_rna():
 
 # # ------------------------------------------------------------------------------
 
-# def get_complement(s):
-#     """
-#     Return the DNA complement in uppercase
-#     (A -> T, T-> A, C -> G, G-> C).
-#     """
-#     return None
+def get_complement(s):
+    """
+    Return the DNA complement in uppercase
+    (A -> T, T-> A, C -> G, G-> C).
+    """
+    return None
 
 
-# def test_get_complement():
-#     assert get_complement('CCGGAAGAGCTTACTTAG') == 'GGCCTTCTCGAATGAATC'
-#     assert get_complement('ccggaagagcttacttag') == 'GGCCTTCTCGAATGAATC'
+def test_get_complement():
+    assert get_complement('CCGGAAGAGCTTACTTAG') == 'GGCCTTCTCGAATGAATC'
+    assert get_complement('ccggaagagcttacttag') == 'GGCCTTCTCGAATGAATC'
 
 
 # # ------------------------------------------------------------------------------
