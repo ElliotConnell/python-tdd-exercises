@@ -225,12 +225,14 @@ def test_transcribe_dna_to_rna():
 
 # # ------------------------------------------------------------------------------
 
-def get_complement(s):
+def get_complement(dna):
     """
     Return the DNA complement in uppercase
     (A -> T, T-> A, C -> G, G-> C).
     """
-    return None
+    dna = dna.upper()
+    table = str.maketrans({'A' : 'T', 'T' : 'A', 'C' : 'G', 'G' : 'C'})
+    return dna.translate(table)
 
 
 def test_get_complement():
