@@ -164,16 +164,16 @@ def validate_dna(dna):
     """
 
     dna_characters = {'a', 'c', 't', 'g', 'A', 'C', 'T', 'G'}
-    summary_list = list()
+    
 
     for item in dna:
         if item in dna_characters:
-            summary_list.append(True)
+            pass
         else:
-            summary_list.append(False)
-            break
+            return False
+
     
-    return summary_list[-1]
+    return True
 
 
 def test_validate_dna():
@@ -190,7 +190,8 @@ def base_pair(c):
     of the base pair. If the base is not recognized,
     return 'unknown'.
     """
-    return None
+    c = c.lower()
+    return {'a' : 't', 't' : 'a', 'c' : 'g', 'g' : 'c'}.get(c, 'unknown')
 
 
 def test_base_pair():
