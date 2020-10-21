@@ -242,12 +242,15 @@ def test_get_complement():
 
 # # ------------------------------------------------------------------------------
 
-def get_reverse_complement(s):
+def get_reverse_complement(dna):
     """
     Return the reverse complement of string s
     (complement reversed in order).
     """
-    return None
+    dna = dna.upper()
+    table = str.maketrans({'A' : 'T', 'T' : 'A', 'C' : 'G', 'G' : 'C'})
+    translation = (dna.translate(table))[::-1]
+    return translation
 
 
 def test_get_reverse_complement():
