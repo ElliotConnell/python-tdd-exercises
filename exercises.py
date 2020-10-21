@@ -260,18 +260,18 @@ def test_get_reverse_complement():
 
 # # ------------------------------------------------------------------------------
 
-# def remove_substring(substring, string):
-#     """
-#     Returns string with all occurrences of substring removed.
-#     """
-#     return None
+def remove_substring(substring, string):
+    """
+    Returns string with all occurrences of substring removed.
+    """
+    return None
 
 
-# def test_remove_substring():
-#     assert remove_substring('GAA', 'CCGGAAGAGCTTACTTAG') == 'CCGGAGCTTACTTAG'
-#     assert remove_substring('CCG', 'CCGGAAGAGCTTACTTAG') == 'GAAGAGCTTACTTAG'
-#     assert remove_substring('TAG', 'CCGGAAGAGCTTACTTAG') == 'CCGGAAGAGCTTACT'
-#     assert remove_substring('GAA', 'GAAGAAGAA') == ''
+def test_remove_substring():
+    assert remove_substring('GAA', 'CCGGAAGAGCTTACTTAG') == 'CCGGAGCTTACTTAG'
+    assert remove_substring('CCG', 'CCGGAAGAGCTTACTTAG') == 'GAAGAGCTTACTTAG'
+    assert remove_substring('TAG', 'CCGGAAGAGCTTACTTAG') == 'CCGGAAGAGCTTACT'
+    assert remove_substring('GAA', 'GAAGAAGAA') == ''
 
 
 # # ------------------------------------------------------------------------------
