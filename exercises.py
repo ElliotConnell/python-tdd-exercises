@@ -277,18 +277,18 @@ def test_remove_substring():
 
 # # ------------------------------------------------------------------------------
 
-# def get_position_indices(triplet, dna):
-#     """
-#     Returns list of position indices for a specific triplet (3-mer)
-#     in a DNA sequence. We start counting from 0
-#     and jump by 3 characters from one position to the next.
-#     """
-#     return None
+def get_position_indices(triplet, dna):
+    """
+    Returns list of position indices for a specific triplet (3-mer)
+    in a DNA sequence. We start counting from 0
+    and jump by 3 characters from one position to the next.
+    """
+    return None
 
 
-# def test_get_position_indices():
-#     assert get_position_indices('GAA', 'CCGGAAGAGCTTACTTAG') == [1]
-#     assert get_position_indices('GAA', 'CCGGAAGAGCTTACTTAGGAAGAA') == [1, 6, 7]
+def test_get_position_indices():
+    assert get_position_indices('GAA', 'CCGGAAGAGCTTACTTAG') == [1]
+    assert get_position_indices('GAA', 'CCGGAAGAGCTTACTTAGGAAGAA') == [1, 6, 7]
 
 
 # # ------------------------------------------------------------------------------
