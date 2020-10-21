@@ -264,7 +264,8 @@ def remove_substring(substring, string):
     """
     Returns string with all occurrences of substring removed.
     """
-    return None
+    substitute = string.replace(substring, "")
+    return substitute
 
 
 def test_remove_substring():
